@@ -3,19 +3,19 @@ import { client, getTeams } from 'cfbd';
 // Set up the client with your API key
 client.setConfig({
     headers: {
-        'Authorization': `${Bearer}`,
+        'Authorization': 'Bearer F7w1YTndednOuQmCjJV8/dK2ZXgwR3hxs9meOQYpwoqt7nnCRNbZ60RMouP0P9JS',
     }
 });
 
 // Call the getGames endpoint
-const games = await getGames({
+const teams = await getTeams({
     query: {
-        year: 2023,
+        year: 2025,
         classification: 'fbs',
     },
 });
 
-for (const game of games.data ?? []) {
+for (const team of teams.data ?? []) {
     // Do something with the game data
     // For example:
-    console.log(`${game.awayTeam} vs ${game.homeTeam} - ${game.excitementIndex}`);
+    console.log(`${teams}`);
