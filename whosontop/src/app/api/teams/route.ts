@@ -1,9 +1,9 @@
-import { client, getGames } from 'cfbd';
+import { client, getTeams } from 'cfbd';
 
 // Set up the client with your API key
 client.setConfig({
     headers: {
-        'Authorization': 'Bearer YOUR_API_KEY',
+        'Authorization': `${Bearer}`,
     }
 });
 
